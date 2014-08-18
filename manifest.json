@@ -1,0 +1,24 @@
+{
+"name": "EH-GalleryGet",
+"version": "0.1",
+"manifest_version": 2,
+"description": "The extension is to get video from caoliu using jwplayer.",
+"browser_action": {
+    "default_icon": {
+        "19": "favicon19.png"
+    },
+
+    "default_popup": "popup.html"
+
+},
+"icons": {
+    "16": "favicon16.png",
+    "48": "favicon48.png"
+
+
+},
+
+"permissions": [
+"tabs", "http://*/*", "https://*/*","downloads","bookmarks"
+]
+}

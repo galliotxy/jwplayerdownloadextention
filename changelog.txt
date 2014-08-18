@@ -1,0 +1,3 @@
+20140306
+
+修复部分bug，get-content.js和background.js用settimeout实现，功能完成
