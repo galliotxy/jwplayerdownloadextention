@@ -12,8 +12,8 @@
 
     // 获取相册页面标题
     var title = document.getElementsByTagName('title')[0].innerHTML;
-    alert(title)
-    alert(1)
+    alert(title);
+
     // 获取视频Url
     //var videoUrl = document.getElementsByTagName('video').length;
     var videoPageUrl = document.getElementsByTagName('embed')[0].src;

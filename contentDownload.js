@@ -14,14 +14,25 @@
 
     // 获取相册页面标题
     var title = document.getElementsByTagName('title')[0].innerHTML;
-    alert(title)
+    alert(title);
 
     // 获取视频Url
-    var evt = document.createEvent("MouseEvents");
-    evt.initEvent("click", true, true);
-    document.getElementById('closeb').dispatchEvent(evt);
-    document.getElementById('player_display').click();
-
+//    var evt = document.createEvent("MouseEvents");
+//    evt.initEvent("click", true, true);
+//    document.getElementById('closeb').dispatchEvent(evt);
+//    document.getElementById('player_display').click();
+    if(document.getElementsByName('video').src == null)
+    {
+        alert("Url is empty");
+        return;
+    }
     var videoUrl = document.getElementsByName('video').src;
-    alert(videoUrl)
+    alert(videoUrl);
+    chrome.runtime.sendMessage({purpose:"download",title: title, pageUrl: pageUrl, videoUrl: videoUrl},function(response){
+        if (response == "denied")
+        {
+
+        }
+
+    });
 }());
