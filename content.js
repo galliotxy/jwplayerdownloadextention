@@ -59,10 +59,10 @@ function fetchVideoPage(link) {
     if(doc.getElementsByTagName('video').src == null)
     {
         //doc.getElementById('closeb').click;
-        var evt = document.createEvent("MouseEvents");
+        var evt = doc.createEvent("MouseEvents");
         evt.initEvent("click", true, true);
-        document.getElementById('closeb').dispatchEvent(evt);
-        document.getElementById('player_display').click();
+        doc.getElementById('closeb').dispatchEvent(evt);
+        doc.getElementById('player_display').click();
         //document.getElementsByTagName('video')[0].load();
     }
 
